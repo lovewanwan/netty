@@ -226,11 +226,19 @@
       <groupId>com.sun.activation</groupId>
       <artifactId>javax.activation</artifactId>
     </dependency>
+
+    <!--自己添加的jar包-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.83</version>
+    </dependency>
+
   </dependencies>
 
-  <build>
+  <!--<build>
     <plugins>
-      <!-- run-example.sh invokes this plugin to launch an example. -->
+      &lt;!&ndash; run-example.sh invokes this plugin to launch an example. &ndash;&gt;
       <plugin>
         <groupId>kr.motd.maven</groupId>
         <artifactId>exec-maven-plugin</artifactId>
@@ -248,6 +256,6 @@
         </configuration>
       </plugin>
     </plugins>
-  </build>
+  </build>-->
 </project>
 

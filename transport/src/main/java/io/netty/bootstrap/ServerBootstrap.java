@@ -28,6 +28,7 @@ import io.netty.channel.ChannelPipeline;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.ServerChannel;
 import io.netty.util.AttributeKey;
+import io.netty.util.concurrent.Future;
 import io.netty.util.internal.ObjectUtil;
 import io.netty.util.internal.logging.InternalLogger;
 import io.netty.util.internal.logging.InternalLoggerFactory;
@@ -279,5 +280,10 @@ public class ServerBootstrap extends AbstractBootstrap<ServerBootstrap, ServerCh
     @Override
     public final ServerBootstrapConfig config() {
         return config;
+    }
+
+    @Override
+    public Future<Object> connect(String s, String s1) {
+        return null;
     }
 }

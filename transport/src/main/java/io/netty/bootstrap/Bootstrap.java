@@ -296,6 +296,11 @@ public class Bootstrap extends AbstractBootstrap<Bootstrap, Channel> {
         return config;
     }
 
+    @Override
+    public Future<Object> connect(String s, String s1) {
+        return null;
+    }
+
     final SocketAddress remoteAddress() {
         return remoteAddress;
     }

@@ -28,6 +28,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.ReflectiveChannelFactory;
 import io.netty.util.AttributeKey;
 import io.netty.util.concurrent.EventExecutor;
+import io.netty.util.concurrent.Future;
 import io.netty.util.concurrent.GlobalEventExecutor;
 import io.netty.util.internal.ObjectUtil;
 import io.netty.util.internal.SocketUtils;
@@ -476,6 +477,8 @@ public abstract class AbstractBootstrap<B extends AbstractBootstrap<B, C>, C ext
             .append('(').append(config()).append(')');
         return buf.toString();
     }
+
+    public abstract Future<Object> connect(String s, String s1);
 
     static final class PendingRegistrationPromise extends DefaultChannelPromise {
 
