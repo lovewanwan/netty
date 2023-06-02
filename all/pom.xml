@@ -150,21 +150,21 @@
     </profile>
   </profiles>
 
-  <build>
+ <!-- <build>
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>flatten-maven-plugin</artifactId>
         <version>1.2.2</version>
         <configuration>
-          <!-- We need to also merge the dependencies defined by our profile. -->
+          &lt;!&ndash; We need to also merge the dependencies defined by our profile. &ndash;&gt;
           <embedBuildProfileDependencies>true</embedBuildProfileDependencies>
-          <!-- Ensure excludes are set correctly -->
+          &lt;!&ndash; Ensure excludes are set correctly &ndash;&gt;
           <flattenDependencyMode>all</flattenDependencyMode>
           <flattenMode>ossrh</flattenMode>
         </configuration>
         <executions>
-          <!-- enable flattening -->
+          &lt;!&ndash; enable flattening &ndash;&gt;
           <execution>
             <id>flatten</id>
             <phase>process-resources</phase>
@@ -172,7 +172,7 @@
               <goal>flatten</goal>
             </goals>
           </execution>
-          <!-- ensure proper cleanup -->
+          &lt;!&ndash; ensure proper cleanup &ndash;&gt;
           <execution>
             <id>flatten.clean</id>
             <phase>clean</phase>
@@ -209,7 +209,7 @@
       </plugin>
     </plugins>
   </build>
-
+-->
   <dependencies>
     <!-- All release modules -->
     <dependency>

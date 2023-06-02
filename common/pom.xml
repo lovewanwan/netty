@@ -101,7 +101,7 @@
     </dependency>
   </dependencies>
 
-  <build>
+ <!-- <build>
     <plugins>
       <plugin>
         <artifactId>maven-shade-plugin</artifactId>
@@ -130,7 +130,7 @@
           </execution>
         </executions>
       </plugin>
-      <!-- Add generated collection sources. -->
+      &lt;!&ndash; Add generated collection sources. &ndash;&gt;
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>build-helper-maven-plugin</artifactId>
@@ -162,7 +162,7 @@
         </executions>
       </plugin>
 
-      <!-- Generate the primitive collections from the template files. -->
+      &lt;!&ndash; Generate the primitive collections from the template files. &ndash;&gt;
       <plugin>
         <groupId>org.codehaus.gmaven</groupId>
         <artifactId>groovy-maven-plugin</artifactId>
@@ -204,10 +204,10 @@
             </goals>
             <configuration>
               <instructions>
-                <!-- NativeLibraryLoader can be used to manually load native libraries from other bundles that this bundle does not depend on,
-                hence use DynamicImport-Package instruction to ensure the loading is successful -->
+                &lt;!&ndash; NativeLibraryLoader can be used to manually load native libraries from other bundles that this bundle does not depend on,
+                hence use DynamicImport-Package instruction to ensure the loading is successful &ndash;&gt;
                 <DynamicImport-Package>*</DynamicImport-Package>
-                <!-- JCTools is shaded -->
+                &lt;!&ndash; JCTools is shaded &ndash;&gt;
                 <Import-Package>!org.jctools.*;sun.misc;resolution:=optional;*</Import-Package>
               </instructions>
             </configuration>
@@ -216,4 +216,5 @@
       </plugin>
     </plugins>
   </build>
+  -->
 </project>
